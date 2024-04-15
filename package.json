@@ -1,5 +1,5 @@
 {
-  "name": "school-check-app",
+  "name": "re-frame-with-shadowcljs-app",
   "version": "0.0.1",
   "private": true,
   "dependencies": {
