@@ -1,26 +1,11 @@
 ;; shadow-cljs configuration
-{
- :builds
- {:frontend
-  {:target  :browser
-   :modules {:main {:init-fn core/init}}}}}
-
 ;;use deps.edn for dependencies
 {:deps true
-
- :source-paths
- ["src/dev"
-  "src/main"
-  "src/test"]
-
  :nrepl {:port 3010}
-
  :builds {:app {:target :browser
-                :modules {:base {:init-fn core/init}}
+                :modules {:base {:init-fn example.core/init}}
                 :output-dir "public/js/compiled"
                 :asset-path "/js/compiled"
                 :compiler-options {:closure-defines {re-frame.trace.trace-enabled? true}}
                 :devtools {:http-root "public"
-                           :http-port 3000
-                           :preloads [devtools.preload
-                                      day8.re-frame-10x.preload]}}}}
+                           :http-port 3000}}}}
