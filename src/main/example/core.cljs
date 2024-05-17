@@ -4,7 +4,7 @@
             [reagent.core :as r]))
 
 (defn app []
-      [:div "Hello world1!"])
+      [:div "Hello world!"])
 
 (defonce root (createRoot (js/document.getElementById "root")))
 
